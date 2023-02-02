@@ -8,6 +8,7 @@
 body {
   margin: 2rem;
   padding: 0;
+  line-height: 25px;
 }
 
 main {
@@ -23,10 +24,16 @@ img {
   width: 400px;
 }
 
+.categoryname {
+  color: #d8d8d8cc;
+  margin-bottom: 1rem;
+}
+
 .productlist_grid {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  gap: 3rem;
 }
 
 .productlist_grid article {
@@ -34,6 +41,30 @@ img {
   flex-direction: column;
   margin-bottom: 1rem;
   align-content: center;
+}
+
+.productlist_grid article a {
+  text-decoration: none;
+  color: royalblue;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.productlist_grid article.discountitem .procent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.procent p:last-child {
+  background: red;
+  padding: 0.2rem;
+}
+
+p {
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header li {
@@ -65,6 +96,14 @@ h2 {
   font-weight: 700;
   font-style: normal;
   text-align: center;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 2rem;
 }
 
 ul {
