@@ -12,10 +12,14 @@ body {
 }
 
 main {
-  margin: 2rem;
+  margin: 0.5rem;
 }
 
 header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
   margin-bottom: 2rem;
 }
 
@@ -30,10 +34,6 @@ img {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-
-.section {
-  display: flex;
 }
 
 dl dt {
@@ -166,7 +166,7 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: "blenny", sans-serif;
   font-weight: 900;
   font-style: normal;
