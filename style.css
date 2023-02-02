@@ -29,6 +29,21 @@ img {
   margin-bottom: 1rem;
 }
 
+.productpath {
+  list-style-type: none;
+  display: flex;
+  align-content: flex-start;
+  word-spacing: 3px;
+}
+
+.productpath a {
+  color: #acababcc;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
 .productlist_grid {
   display: grid;
   grid-template-columns: 1fr;
