@@ -11,24 +11,29 @@ body {
 }
 
 main {
-  margin-top: 2rem;
+  margin: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
 }
 
 img {
   height: auto;
-  width: auto;
+  width: 400px;
 }
 
-.productlist {
+.productlist_grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  justify-content: center;
 }
 
-.productlist article {
+.productlist_grid article {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  align-content: center;
 }
 
 .header li {
@@ -52,6 +57,14 @@ h1 {
   font-family: "blenny", sans-serif;
   font-weight: 900;
   font-style: normal;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
 }
 
 ul {
@@ -96,9 +109,9 @@ ol {
     padding: 20px 10px;
   }
 
-  .productlist {
+  .productlist_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    justify-content: space-evenly;
   }
 }
