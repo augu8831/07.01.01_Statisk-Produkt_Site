@@ -12,21 +12,103 @@ body {
 }
 
 main {
-  margin: 2rem;
+  margin: 0.5rem;
 }
 
 header {
   margin-bottom: 2rem;
 }
 
+header h1 {
+  margin-bottom: 2rem;
+}
+
 img {
+  display: block;
   height: auto;
-  width: 400px;
+  width: 80%;
+}
+
+.information dl {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+dl dt {
+  font-size: 1rem;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-style: normal;
+  text-align: left;
+}
+
+dl dd {
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+label {
+  font-size: 1rem;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  font-size: 18px;
+  padding: 10px 28px;
+  width: 100%;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #e7e7e7;
+  color: black;
+  border-radius: 12px;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(110, 110, 110, 0.24), 0 17px 50px 0 rgba(225, 225, 225, 0.19);
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+}
+
+.buyitem {
+  margin-top: 2rem;
 }
 
 .categoryname {
   color: #d8d8d8cc;
   margin-bottom: 1rem;
+}
+
+.productpath {
+  list-style-type: none;
+  display: flex;
+  align-content: flex-start;
+  word-spacing: 3px;
+}
+
+.productpath a {
+  color: #acababcc;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 .productlist_grid {
@@ -84,7 +166,7 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: "blenny", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -152,5 +234,10 @@ ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-around;
   }
 }
