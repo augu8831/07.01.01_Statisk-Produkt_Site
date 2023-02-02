@@ -25,6 +25,13 @@ img {
   width: 80%;
 }
 
+.information dl {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .section {
   display: flex;
 }
