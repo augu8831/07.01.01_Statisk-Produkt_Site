@@ -8,7 +8,6 @@
 body {
   margin: 2rem;
   padding: 0;
-  line-height: 25px;
 }
 
 main {
@@ -16,11 +15,11 @@ main {
 }
 
 header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 header h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 img {
@@ -99,8 +98,7 @@ button:hover {
 .productpath {
   list-style-type: none;
   display: flex;
-  align-content: flex-start;
-  word-spacing: 3px;
+  flex-direction: row;
 }
 
 .productpath a {
@@ -109,6 +107,7 @@ button:hover {
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
+  word-spacing: 3px;
 }
 
 .productlist_grid {
