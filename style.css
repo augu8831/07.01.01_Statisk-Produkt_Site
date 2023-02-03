@@ -8,6 +8,10 @@
 .brand {
 }
 
+.beforeprice {
+  text-decoration: line-through;
+}
+
 body {
   margin: 2rem;
   padding: 0;
@@ -81,6 +85,10 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(110, 110, 110, 0.24), 0 17px 50px 0 rgba(225, 225, 225, 0.19);
 }
 
+.section {
+  margin-top: 2rem;
+}
+
 .section h2 {
   font-size: 2rem;
   font-family: "elza-narrow", sans-serif;
@@ -98,19 +106,31 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-.productpath {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
+ol.productpath {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
 }
 
-.productpath a {
+ol.productpath li + li:before {
+  padding: 8px;
+  color: rgb(42, 42, 42);
+  content: "/\00a0";
+}
+
+ol.productpath li a {
   color: #acababcc;
-  font-family: "elza-narrow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  word-spacing: 3px;
+  text-decoration: none;
+}
+
+ol.productpath li {
+  display: inline;
+  font-size: 15.5px;
+}
+
+ol.productpath li a:hover {
+  color: #686f75;
+  /* text-decoration: underline; */
 }
 
 .productlist_grid {
@@ -169,15 +189,18 @@ a {
 
 h1 {
   font-size: 3.5rem;
-  font-family: "blenny", sans-serif;
-  font-weight: 900;
+  /* font-family: "gala-triline", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "macula-line", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
 h2 {
   font-size: 2rem;
   font-family: "elza-narrow", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   text-align: center;
 }
@@ -235,11 +258,17 @@ ol {
   .productlist_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-evenly;
+    gap: 5rem;
+  }
+
+  .productlist_grid article {
+    margin: 5rem;
   }
 
   .section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 15rem;
+    margin-top: 5rem;
   }
 }
