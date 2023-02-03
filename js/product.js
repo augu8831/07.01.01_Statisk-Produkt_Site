@@ -1,7 +1,7 @@
 // https://kea-alt-del.dk/t7/api/products
 // https://kea-alt-del.dk/t7/images/webp/640/${productid}.webp
 
-fetch("https://kea-alt-del.dk/t7/api/products/1528")
+fetch("https://kea-alt-del.dk/t7/api/products/1526")
   .then((response) => response.json())
   .then((data) => showProduct(data));
 
@@ -9,7 +9,7 @@ function showProduct(product) {
   console.log(product);
   document.querySelector(".buyitem h2").textContent = product.productdisplayname;
   document.querySelector(".buyitem .brand").textContent = product.brand;
-  document.querySelector("img").scr = "https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp";
+  document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
 
 // {
