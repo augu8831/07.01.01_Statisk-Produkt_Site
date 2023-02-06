@@ -140,6 +140,21 @@ ol.productpath li a:hover {
   gap: 3rem;
 }
 
+.productlist_grid article.soldOut img {
+  opacity: 0.5;
+}
+
+.productlist_grid article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 1rem;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .productlist_grid article {
   display: flex;
   flex-direction: column;
