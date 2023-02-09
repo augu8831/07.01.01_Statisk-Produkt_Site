@@ -1,14 +1,17 @@
 // https://kea-alt-del.dk/t7/api/products
 // https://kea-alt-del.dk/t7/images/webp/640/${productid}.webp
 
-fetch("https://kea-alt-del.dk/t7/api/products/1526")
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+fetch("https://kea-alt-del.dk/t7/api/products/" + id)
   .then((response) => response.json())
   .then((data) => showProduct(data));
 
 function showProduct(product) {
   console.log(product);
-  document.querySelector(".buyitem h2").textContent = product.productdisplayname;
-  document.querySelector(".buyitem .brand").textContent = product.brand;
+  document.querySelector(".buyItem h2").textContent = product.productdisplayname;
+  document.querySelector(".buyItem .brand").textContent = product.brand;
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
 
