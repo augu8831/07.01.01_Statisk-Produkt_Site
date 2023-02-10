@@ -7,6 +7,7 @@ function showCategories(cats) {
 }
 
 function showCategory(cat) {
+  console.log(cat);
   //fanger vores template
   const template = document.querySelector("template").content;
   //vi cloner
