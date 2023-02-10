@@ -14,7 +14,9 @@ function showCategory(cat) {
   const clone = template.cloneNode(true);
   //ændrer indhold
   clone.querySelector("a").textContent = cat.catgory;
-  clone.querySelector("a").href = `productlist.html?category=${cat.category}`;
+  //   clone.querySelector("a").href = `productlist.html?category=${cat.category}`;
+  copy.querySelector("a").setAttribute("href", `productlist.html?category=${cat.category}`);
+
   //appender
   document.querySelector(".letterGroup ol").appendChild(clone);
 }

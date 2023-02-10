@@ -1,10 +1,11 @@
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 
-fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
+fetch("https://kea-alt-del.dk/t7/api/products?category" + category)
+  // (tilføj = efter ?category)
   .then((res) => res.json())
-  .then(showProducts);
-// .then((data) => showProducts(data));
+  // .then(showProducts);
+  .then((data) => showProducts(data));
 
 function showProducts(products) {
   //looper og kalder showProduct
@@ -30,6 +31,7 @@ function showProduct(product) {
 
   // kan bruge .href eller setAttribute
   copy.querySelector(".read-more").setAttribute("href", `productpage.html?id=${product.id}`);
+  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   //appende
   document.querySelector("main").appendChild(copy);
 }
